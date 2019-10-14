@@ -1,0 +1,1 @@
+select d.name,d3.title from authors d join authors_books d2 on d.id=d2.author_id join books d3 on d2.book_id=d3.id;
