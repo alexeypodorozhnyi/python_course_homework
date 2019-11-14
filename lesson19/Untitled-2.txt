@@ -1,0 +1,17 @@
+class Human
+{
+    constructor(name,age){
+        this.name = name
+        this.age =age
+    }
+    changeAge (number){
+        age = number 
+    }
+    changeName (){
+        name=string
+    }
+}
+let irina = new Human("Irina",18)
+let iri
+
+function 

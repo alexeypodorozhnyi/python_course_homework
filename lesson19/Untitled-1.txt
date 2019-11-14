@@ -1,0 +1,4 @@
+function maxim(a, b)
+{
+    console.log( )
+}
