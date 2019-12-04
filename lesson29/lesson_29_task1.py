@@ -25,6 +25,13 @@ class ClientDate:
             return current_date.year - date.year - 1
         return current_date.year - date.year
 
+    @property
+    def intercalary_years_count(self):
+        current_date=datetime.date(datetime.date.today().year,1,1)
+        date = datetime.date(datetime.datetime.strptime(self.date, '%d-%m-%Y').year,1, 1)
+        return (current_date - date).days % 365
 
-d = ClientDate('03-12-2019')
+
+d = ClientDate('11-08-1988')
 print(d.age)
+print(d.intercalary_years_count)
